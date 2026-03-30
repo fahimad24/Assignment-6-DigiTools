@@ -6,6 +6,15 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+@theme {
+  --color-primary: #4f39f6;
+  --color-primary-focus: #9514fa;
+}
+
 .primary-gradient {
-  background-image: linear-gradient(90deg, #4f39f6, #9514fa);
+  background-image: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-primary-focus)
+  );
 }

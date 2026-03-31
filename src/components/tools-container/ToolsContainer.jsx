@@ -2,6 +2,7 @@ import ProductCart from "../ProductCart";
 import ToolsCard from "./ToolsCard";
 import React, { use } from "react";
 import { useAuth } from "../../Providers/auth-context";
+import { toast } from "react-toastify";
 
 const ToolsContainer = ({ data }) => {
   const { addtoCart, setAddToCart } = useAuth();
@@ -9,21 +10,41 @@ const ToolsContainer = ({ data }) => {
   const [isAdded, setIsAdded] = React.useState(null);
 
   const handleAddToCart = (tool) => {
-    if (isAdded === tool.id) return;
-    setAddToCart([...addtoCart, tool]);
+    if (isAdded === tool.id) {
+      toast.info(`${tool.name} is already in the cart!`, {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      return;
+    }
 
+    setAddToCart([...addtoCart, tool]);
     setIsAdded(tool.id);
+    toast.success(`${tool.name} added to cart!`, {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
   };
 
   const [activeTab, setActiveTab] = React.useState("products");
   return (
     <section className="py-16">
-      <div className="container mx-auto">
+      <div className="container mx-auto sm:px-10 xl:px-0 px-5">
         <div>
-          <h2 className="text-5xl font-extrabold text-center mb-6">
+          <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-6">
             Premium Digital Tools
           </h2>
-          <p className="text-xl text-center text-gray-600 max-w-2xl mx-auto">
+          <p className="sm:text-xl text-center text-gray-600 max-w-2xl mx-auto">
             Discover our collection of premium digital tools designed to elevate
             your creative process and boost your productivity.
           </p>

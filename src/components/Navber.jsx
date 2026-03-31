@@ -34,6 +34,11 @@ const Navber = () => {
               <li>Pricing</li>
               <li>Testimonials</li>
               <li>FAQ</li>
+              <li className="md:hidden">
+                <button className="py-2 px-5 flex justify-center rounded-full primary-gradient text-white font-semibold">
+                  Get Start
+                </button>
+              </li>
             </ul>
           </div>
           <a className=" text-4xl font-bold primary-gradient bg-clip-text text-transparent p-2">
@@ -59,7 +64,7 @@ const Navber = () => {
             <ShoppingCart></ShoppingCart>
           </button>
           <button>Login</button>
-          <button className="py-2 px-5 rounded-full primary-gradient text-white font-semibold">
+          <button className="py-2 px-5 hidden sm:block rounded-full primary-gradient text-white font-semibold">
             Get Start
           </button>
         </div>

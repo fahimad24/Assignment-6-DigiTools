@@ -4,7 +4,7 @@ import banner from "../assets/banner.png";
 const Hero = () => {
   return (
     <section>
-      <div className="container mx-auto py-10 flex flex-col-reverse lg:flex-row items-center gap-10">
+      <div className="container mx-auto py-10 pt-28 px-5 sm:px-10 xl:px-0 flex flex-col-reverse lg:flex-row items-center gap-10">
         <div className="flex-1">
           <div className="flex gap-2 py-2 px-5 bg-[#E1E7FF] rounded-full items-center w-max mb-4">
             <div className="w-5 h-5 bg-linear-0 from-primary/20 to-primary-focus/20 rounded-full flex items-center justify-center doted-animation">
@@ -12,7 +12,6 @@ const Hero = () => {
                 <div className="w-1.5 h-1.5 bg-linear-0 from-primary to-primary-focus relative rounded-full"></div>
               </div>
             </div>
-
             <h2 className="font-medium bg-linear-0 from-primary to-primary-focus bg-clip-text text-transparent">
               New: AI-Powered Tools Available
             </h2>

@@ -1,11 +1,11 @@
 const CallToAction = () => {
   return (
     <section className="bg-linear-45 from-primary to-primary-focus text-white py-16">
-      <div className="container mx-auto px-4 py-16 text-center">
-        <h2 className="text-5xl font-extrabold mb-6">
+      <div className="container mx-auto sm:px-10 xl:px-0 px-5 py-16 text-center">
+        <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold mb-6">
           Ready to Transform Your Workflow?
         </h2>
-        <p className="text-white/80 text-lg mb-8">
+        <p className="text-white/80 sm:text-lg mb-8">
           Join thousands of professionals who are already using Digitools to
           work smarter. Start your free trial today.
         </p>

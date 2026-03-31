@@ -48,8 +48,8 @@ const Pricing = () => {
   };
   return (
     <section>
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-5xl font-extrabold text-center mb-6">
+      <div className="container mx-auto py-16 sm:px-10 xl:px-0 px-5">
+        <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-6">
           Simple, Transparent Pricing
         </h2>
         <p className="text-gray-600 text-center mb-12">

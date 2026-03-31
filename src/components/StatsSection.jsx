@@ -1,6 +1,6 @@
 const StatsSection = () => {
   return (
-    <section className="py-16 primary-gradient text-white">
+    <section className="py-16 mt-10 md:my-16 primary-gradient text-white">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between gap-8">
           <div className="text-center flex-1 space-y-3.5">

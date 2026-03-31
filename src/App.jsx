@@ -6,6 +6,7 @@ import ToolsContainer from "./components/tools-container/ToolsContainer";
 import StepsSection from "./components/StepsSection";
 import Pricing from "./components/pricing/Pricing";
 import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 import { Suspense } from "react";
 
 async function digitalTools() {
@@ -26,6 +27,7 @@ function App() {
       <StepsSection></StepsSection>
       <Pricing></Pricing>
       <CallToAction></CallToAction>
+      <Footer></Footer>
     </>
   );
 }

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "prod_01",
+    "name": "Starter Plan",
+    "description": "Perfect for individuals looking to jumpstart their creative journey with essential AI tools.",
+    "price": 0,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["5 AI generations/day", "Basic templates", "Standard support"],
+    "icon": "🌱"
+  },
+  {
+    "id": "prod_02",
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker", "Plagiarism check"],
+    "icon": "📝"
+  },
+  {
+    "id": "prod_03",
+    "name": "Professional Suite",
+    "description": "The ultimate toolkit for small teams and professional freelancers requiring high output.",
+    "price": 290,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Team collaboration", "Advanced analytics", "Priority 24/7 support", "Custom branding"],
+    "icon": "💼"
+  },
+  {
+    "id": "prod_04",
+    "name": "Lifetime License",
+    "description": "Unlock all premium features forever with a single payment. No recurring fees.",
+    "price": 499,
+    "period": "one-time",
+    "tag": "Limited",
+    "tagType": "new",
+    "features": ["All future updates", "Offline access", "Multi-device sync", "Premium assets library"],
+    "icon": "💎"
+  },
+  {
+    "id": "prod_05",
+    "name": "SEO Optimizer",
+    "description": "Boost your website ranking with automated keyword research and on-page suggestions.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Weekly site audits", "Keyword tracking", "Backlink monitor"],
+    "icon": "🚀"
+  },
+  {
+    "id": "prod_06",
+    "name": "Enterprise Cloud",
+    "description": "Secure, scalable infrastructure for large organizations with complex data needs.",
+    "price": 999,
+    "period": "monthly",
+    "tag": "Contact Us",
+    "tagType": "best-seller",
+    "features": ["Dedicated account manager", "SLA guarantees", "Custom API integration", "SSO & SAML"],
+    "icon": "☁️"
+  },
+  {
+    "id": "prod_07",
+    "name": "Design Asset Pack",
+    "description": "A curated collection of 500+ high-resolution UI elements and icons for designers.",
+    "price": 45,
+    "period": "one-time",
+    "tag": "Bundle",
+    "tagType": "new",
+    "features": ["Figma & Sketch files", "Commercial license", "SVG & PNG exports"],
+    "icon": "🎨"
+  },
+  {
+    "id": "prod_08",
+    "name": "Social Media Bot",
+    "description": "Automate your social presence and engage with your audience while you sleep.",
+    "price": 149,
+    "period": "yearly",
+    "tag": "Save 20%",
+    "tagType": "popular",
+    "features": ["Auto-scheduling", "Smart engagement", "Performance reports"],
+    "icon": "🤖"
+  },
+  {
+    "id": "prod_09",
+    "name": "SEO Optimizer",
+    "description": "Boost your website ranking with automated keyword research and on-page suggestions.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Weekly site audits", "Keyword tracking", "Backlink monitor"],
+    "icon": "🚀"
+  }
+]

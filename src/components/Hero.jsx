@@ -7,9 +7,9 @@ const Hero = () => {
       <div className="container mx-auto py-10 flex flex-col-reverse lg:flex-row items-center gap-10">
         <div className="flex-1">
           <div className="flex gap-2 py-2 px-5 bg-[#E1E7FF] rounded-full items-center w-max mb-4">
-            <div className="w-6 h-6 bg-linear-0 from-primary/20 to-primary-focus/20 rounded-full flex items-center justify-center">
-              <div className="w-4 h-4 bg-linear-0 from-primary/40 to-primary-focus/40 rounded-full flex items-center justify-center">
-                <div className="w-2 h-2 bg-linear-0 from-primary to-primary-focus relative rounded-full"></div>
+            <div className="w-5 h-5 bg-linear-0 from-primary/20 to-primary-focus/20 rounded-full flex items-center justify-center doted-animation">
+              <div className="w-3 h-3 bg-linear-0 from-primary/40 to-primary-focus/40 rounded-full flex items-center justify-center">
+                <div className="w-1.5 h-1.5 bg-linear-0 from-primary to-primary-focus relative rounded-full"></div>
               </div>
             </div>
 

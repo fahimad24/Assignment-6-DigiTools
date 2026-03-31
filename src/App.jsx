@@ -16,6 +16,7 @@ async function digitalTools() {
 
 function App() {
   const data = digitalTools();
+
   return (
     <>
       <Navber></Navber>

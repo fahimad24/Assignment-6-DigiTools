@@ -1,8 +1,10 @@
 import { ShoppingCart } from "lucide-react";
+import { useAuth } from "../Providers/auth-context";
 
 const Navber = () => {
+  const { addtoCart } = useAuth();
   return (
-    <nav className="shadow">
+    <nav className="shadow fixed w-full z-10 bg-white">
       <div className=" container mx-auto navbar ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -48,7 +50,12 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-5">
-          <button>
+          <button className="relative">
+            <span
+              className={`${addtoCart.length > 0 ? "block" : "hidden"} absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center`}
+            >
+              {addtoCart.length}
+            </span>
             <ShoppingCart></ShoppingCart>
           </button>
           <button>Login</button>

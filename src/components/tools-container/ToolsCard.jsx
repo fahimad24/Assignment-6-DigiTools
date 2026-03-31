@@ -1,4 +1,6 @@
-const ToolsCard = ({ tool }) => {
+import React from "react";
+
+const ToolsCard = ({ tool, handleAddToCart, isAdded }) => {
   return (
     <div className="relative w-full flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
       <div
@@ -44,8 +46,11 @@ const ToolsCard = ({ tool }) => {
         ))}
       </ul>
       <div className="mt-auto ">
-        <button className="w-full rounded-full primary-gradient py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#7a24db]">
-          Buy Now
+        <button
+          className={`w-full rounded-full ${isAdded === tool.id ? "bg-green-500 hover:bg-green-600" : "primary-gradient"} py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#7a24db]`}
+          onClick={() => handleAddToCart(tool)}
+        >
+          {isAdded === tool.id ? "Added to Cart" : "Buy Now"}
         </button>
       </div>
     </div>

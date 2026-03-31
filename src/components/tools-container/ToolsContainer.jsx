@@ -1,9 +1,20 @@
 import ProductCart from "../ProductCart";
 import ToolsCard from "./ToolsCard";
 import React, { use } from "react";
+import { useAuth } from "../../Providers/auth-context";
 
 const ToolsContainer = ({ data }) => {
+  const { addtoCart, setAddToCart } = useAuth();
   const toolsData = use(data);
+  const [isAdded, setIsAdded] = React.useState(null);
+
+  const handleAddToCart = (tool) => {
+    if (isAdded === tool.id) return;
+    setAddToCart([...addtoCart, tool]);
+
+    setIsAdded(tool.id);
+  };
+
   const [activeTab, setActiveTab] = React.useState("products");
   return (
     <section className="py-16">
@@ -34,7 +45,7 @@ const ToolsContainer = ({ data }) => {
                 }`}
                 onClick={() => setActiveTab("cart")}
               >
-                Cart (0)
+                Cart ({addtoCart.length})
               </button>
               <div
                 className={`absolute left-0 top-0 h-full w-1/2 rounded-full primary-gradient -z-10 transform transition-transform duration-300 ease-in-out ${
@@ -51,11 +62,20 @@ const ToolsContainer = ({ data }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
             {/* Tool cards will be rendered here */}
             {toolsData.map((tool) => (
-              <ToolsCard key={tool.id} tool={tool} />
+              <ToolsCard
+                key={tool.id}
+                tool={tool}
+                handleAddToCart={handleAddToCart}
+                isAdded={isAdded}
+              ></ToolsCard>
             ))}
           </div>
         ) : (
-          <ProductCart></ProductCart>
+          <ProductCart
+            addtoCart={addtoCart}
+            setAddToCart={setAddToCart}
+            setIsAdded={setIsAdded}
+          ></ProductCart>
         )}
       </div>
     </section>

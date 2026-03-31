@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import StatsSection from "./components/StatsSection";
 import ToolsContainer from "./components/tools-container/ToolsContainer";
 import StepsSection from "./components/StepsSection";
+import Pricing from "./components/pricing/Pricing";
 import { Suspense } from "react";
 
 async function digitalTools() {
@@ -22,6 +23,7 @@ function App() {
         <ToolsContainer data={data} />
       </Suspense>
       <StepsSection></StepsSection>
+      <Pricing></Pricing>
     </>
   );
 }

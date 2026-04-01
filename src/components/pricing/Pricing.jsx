@@ -50,12 +50,16 @@ const Pricing = () => {
     <section>
       <div className="container mx-auto py-16 sm:px-10 xl:px-0 px-5">
         <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-6">
-          Simple, Transparent Pricing
+          Simple,{" "}
+          <span className="bg-linear-0 from-primary to-primary-focus bg-clip-text text-transparent">
+            Transparent
+          </span>{" "}
+          Pricing
         </h2>
         <p className="text-gray-600 text-center mb-12">
           Choose the plan that fits your needs. No hidden fees, cancel anytime.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-22">
           {pricingPlans.pricing.map((plan, index) => (
             <PricingCard key={index} tool={plan} />
           ))}

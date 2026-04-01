@@ -7,13 +7,16 @@ const StepsSection = () => {
     <section className="sm:py-16 py-10  bg-gray-50">
       <div className="container mx-auto sm:px-10 xl:px-0 px-5">
         <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-6 ">
-          Get Started in 3 Steps
+          Get Started in{" "}
+          <span className="bg-linear-0 from-primary to-primary-focus bg-clip-text text-transparent">
+            3 Steps
+          </span>
         </h2>
         <p className="text-gray-600 text-center mb-12">
           Start using premium digital tools in minutes, not hours.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24 py-16 rounded-lg shadow relative space-y-5">
+          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24 py-16 rounded-lg shadow relative space-y-5 hover:-translate-y-1.5 transition-transform duration-300">
             <div className="absolute top-8 right-8 w-8 h-8 rounded-full primary-gradient text-white flex items-center justify-center">
               01
             </div>
@@ -30,7 +33,7 @@ const StepsSection = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24  py-16 rounded-lg shadow relative space-y-5">
+          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24  py-16 rounded-lg shadow relative space-y-5 hover:-translate-y-1.5 transition-transform duration-300">
             <div className="absolute top-8 right-8 w-8 h-8 rounded-full primary-gradient text-white flex items-center justify-center">
               02
             </div>
@@ -44,7 +47,7 @@ const StepsSection = () => {
               Browse our catalog and select the tools that fit your needs.
             </p>
           </div>
-          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24 py-16 rounded-lg shadow relative space-y-5">
+          <div className="flex flex-col justify-center items-center bg-white px-10 lg:py-24 py-16 rounded-lg shadow relative space-y-5 hover:-translate-y-1.5 transition-transform duration-300">
             <div className="absolute top-8 right-8 w-8 h-8 rounded-full primary-gradient text-white flex items-center justify-center">
               03
             </div>

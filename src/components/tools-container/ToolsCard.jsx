@@ -2,7 +2,7 @@ import React from "react";
 
 const ToolsCard = ({ tool, handleAddToCart, isAdded }) => {
   return (
-    <div className="relative w-full flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-sm">
+    <div className="relative w-full flex flex-col rounded-3xl border border-gray-100 bg-white p-6 shadow-sm  transition-transform duration-300 hover:-translate-y-1.5">
       <div
         className={`absolute right-4 top-4 rounded-full
             ${tool.tagType === "best-seller" ? "bg-orange-100/80 text-amber-600" : tool.tagType === "new" ? "bg-green-100/80 text-green-600" : "bg-primary-focus/10 text-primary-focus"} px-3 py-1 text-xs font-medium `}
@@ -47,7 +47,7 @@ const ToolsCard = ({ tool, handleAddToCart, isAdded }) => {
       </ul>
       <div className="mt-auto ">
         <button
-          className={`w-full rounded-full ${isAdded === tool.id ? "bg-green-500 hover:bg-green-600" : "primary-gradient"} py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#7a24db]`}
+          className={`w-full rounded-full cursor-pointer hover:opacity-90 transition-all duration-500 ${isAdded === tool.id ? "bg-green-500 hover:bg-green-600" : "primary-gradient hover:opacity-90"} py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#7a24db]`}
           onClick={() => handleAddToCart(tool)}
         >
           {isAdded === tool.id ? "Added to Cart" : "Buy Now"}

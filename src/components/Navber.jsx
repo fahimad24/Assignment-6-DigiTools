@@ -35,8 +35,8 @@ const Navber = () => {
               <li>Testimonials</li>
               <li>FAQ</li>
               <li className="md:hidden">
-                <button className="py-2 px-5 flex justify-center rounded-full primary-gradient text-white font-semibold">
-                  Get Start
+                <button className="py-2 px-5 flex justify-center rounded-full primary-gradient text-white font-semibold cursor-pointer">
+                  Get Started
                 </button>
               </li>
             </ul>
@@ -55,7 +55,7 @@ const Navber = () => {
           </ul>
         </div>
         <div className="navbar-end flex gap-5">
-          <button className="relative">
+          <button className="relative cursor-pointer">
             <span
               className={`${addtoCart.length > 0 ? "block" : "hidden"} absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center`}
             >
@@ -63,8 +63,8 @@ const Navber = () => {
             </span>
             <ShoppingCart></ShoppingCart>
           </button>
-          <button>Login</button>
-          <button className="py-2 px-5 hidden sm:block rounded-full primary-gradient text-white font-semibold">
+          <button className="cursor-pointer">Login</button>
+          <button className="py-2 px-5 hidden sm:block rounded-full primary-gradient text-white font-semibold cursor-pointer">
             Get Start
           </button>
         </div>

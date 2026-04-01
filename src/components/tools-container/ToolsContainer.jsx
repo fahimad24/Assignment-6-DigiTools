@@ -42,7 +42,10 @@ const ToolsContainer = ({ data }) => {
       <div className="container mx-auto sm:px-10 xl:px-0 px-5">
         <div>
           <h2 className="lg:text-5xl md:text-4xl text-3xl font-extrabold text-center mb-6">
-            Premium Digital Tools
+            Premium{" "}
+            <span className="bg-linear-0 from-primary to-primary-focus bg-clip-text text-transparent">
+              Digital Tools
+            </span>
           </h2>
           <p className="sm:text-xl text-center text-gray-600 max-w-2xl mx-auto">
             Discover our collection of premium digital tools designed to elevate
@@ -53,7 +56,7 @@ const ToolsContainer = ({ data }) => {
           <div className="flex justify-center items-center mt-10 gap-4 ">
             <div className="relative flex gap-4 border-gray-200 w-60 rounded-full border-2 p-2">
               <button
-                className={`px-4 py-2  ${
+                className={`px-4 py-2 cursor-pointer ${
                   activeTab === "products" ? "text-white font-medium" : ""
                 }`}
                 onClick={() => setActiveTab("products")}
@@ -61,7 +64,7 @@ const ToolsContainer = ({ data }) => {
                 Products
               </button>
               <button
-                className={`px-4 py-2  ${
+                className={`px-4 py-2 cursor-pointer ${
                   activeTab === "cart" ? "text-white font-medium" : ""
                 }`}
                 onClick={() => setActiveTab("cart")}

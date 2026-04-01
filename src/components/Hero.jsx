@@ -16,8 +16,11 @@ const Hero = () => {
               New: AI-Powered Tools Available
             </h2>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold lg:font-extrabold mb-6">
-            Supercharge Your Digital Workflow
+          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold lg:font-extrabold mb-6 leading-25">
+            Supercharge Your Digital{" "}
+            <span className="bg-linear-0 from-primary to-primary-focus bg-clip-text text-transparent">
+              Workflow
+            </span>
           </h1>
           <p className="text-lg text-gray-600 mb-8">
             Explore our collection of AI-powered tools designed to enhance your
@@ -25,12 +28,12 @@ const Hero = () => {
             analysis, we have everything you need to leverage the power of AI.
           </p>
           <div className="flex gap-2">
-            <button className="px-6 mr-3 py-3 primary-gradient text-white rounded-full hover:opacity-90 font-medium transition duration-300">
+            <button className="px-6 mr-3 py-3 primary-gradient text-white rounded-full hover:opacity-90 font-medium transition duration-300 cursor-pointer">
               Explore Products
             </button>
             <button
               className="flex gap-2 px-6 py-2.5 border-2 
-             border-primary-focus rounded-full hover:bg-primary-focus/10 transition duration-300 items-center font-medium text-primary"
+             border-primary-focus rounded-full hover:bg-primary-focus/10 transition duration-300 items-center font-medium text-primary cursor-pointer"
             >
               <Play></Play> Watch Demo
             </button>

@@ -3,7 +3,7 @@ import React from "react";
 const PricingCard = ({ tool }) => {
   return (
     <div
-      className={`relative w-full flex flex-col rounded-3xl border border-gray-100 ${tool.tagType === "Most Popular" ? "primary-gradient pt-0 text-white" : "bg-[#F9FAFC]"} p-6  shadow-sm`}
+      className={`relative w-full flex flex-col rounded-3xl border border-gray-100 ${tool.tagType === "Most Popular" ? "primary-gradient pt-0 text-white sm:scale-110" : "bg-[#F9FAFC]"} p-6  shadow-sm`}
     >
       {tool?.tagType && (
         <div className=" text-center">
@@ -59,7 +59,7 @@ const PricingCard = ({ tool }) => {
       </ul>
       <div className="mt-auto ">
         <button
-          className={`${tool.tagType === "Most Popular" ? "bg-white text-gray-800" : "text-white transition-colors primary-gradient hover:bg-[#7a24db]"} w-full rounded-full  py-3.5 text-sm font-bold  `}
+          className={`${tool.tagType === "Most Popular" ? "bg-white text-gray-800" : "text-white transition-colors primary-gradient hover:bg-[#7a24db]"} w-full rounded-full  py-3.5 text-sm font-bold cursor-pointer hover:opacity-90 transition duration-300`}
         >
           <span
             className={`${tool.tagType && "primary-gradient bg-clip-text text-transparent"}`}

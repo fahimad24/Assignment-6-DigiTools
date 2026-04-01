@@ -32,7 +32,7 @@ const ProductCart = ({ addtoCart, setAddToCart, setIsAdded }) => {
             </div>
             <div>
               <button
-                className="text-red-500   rounded-md hover:text-red-600"
+                className="text-red-500  cursor-pointer rounded-md hover:text-red-600"
                 onClick={() => handleRemoveFromCart(item.id)}
               >
                 Remove
@@ -66,7 +66,7 @@ const ProductCart = ({ addtoCart, setAddToCart, setIsAdded }) => {
             progress: undefined,
           });
         }}
-        className="w-full rounded-full primary-gradient py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[#7a24db]"
+        className="w-full rounded-full primary-gradient py-3.5 text-sm font-semibold text-white transition-colors hover:opacity-95 cursor-pointer"
       >
         Proceed to Checkout
       </button>

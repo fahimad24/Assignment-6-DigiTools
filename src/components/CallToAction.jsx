@@ -10,12 +10,12 @@ const CallToAction = () => {
           work smarter. Start your free trial today.
         </p>
         <div>
-          <button className="bg-white px-8 py-4 rounded-full text-lg font-semibold transition-colors group hover:bg-[#7a24db] mr-3">
+          <button className="bg-white px-8 py-4 rounded-full text-lg font-semibold transition-colors group hover:bg-[#7a24db] cursor-pointer mr-3">
             <span className="primary-gradient bg-clip-text text-transparent group-hover:text-white">
               Explore Products
             </span>
           </button>
-          <button className="border border-gray-300 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors hover:bg-gray-100 hover:text-gray-800">
+          <button className="border border-gray-300 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors hover:bg-gray-100 hover:text-gray-800 cursor-pointer">
             View Pricing
           </button>
         </div>

@@ -7,7 +7,7 @@ const StatsSection = () => {
             <h3 className="text-6xl font-extrabold">50K+</h3>
             <p className="text-2xl text-white/70">Happy Customers</p>
           </div>
-          <div className="text-center flex-1 space-y-3.5">
+          <div className="text-center flex-1 space-y-3.5 sm:border-x-2 border-l-2 max-sm:pl-4 border-white/20 ">
             <h3 className="text-6xl font-extrabold">200+</h3>
             <p className="text-2xl text-white/70">Premium Tools</p>
           </div>
